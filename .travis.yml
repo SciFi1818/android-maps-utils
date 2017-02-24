@@ -17,6 +17,13 @@ env:
     - ANDROID_TAG=google_apis
     - ADB_INSTALL_TIMEOUT=20 # minutes (2 minutes by default)
 
+licenses:
+    - 'android-sdk-preview-license-.+'
+    - 'android-sdk-preview-license'
+    - 'android-sdk-license-.+'
+    - 'android-sdk-license'
+    - 'google-gdk-license-.+'
+
 android:
   components:
     - tools # to get the new `repository-11.xml`
