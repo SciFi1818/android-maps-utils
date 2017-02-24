@@ -17,13 +17,6 @@ env:
     - ANDROID_TAG=google_apis
     - ADB_INSTALL_TIMEOUT=20 # minutes (2 minutes by default)
 
-licenses:
-    - 'android-sdk-preview-license-.+'
-    - 'android-sdk-preview-license'
-    - 'android-sdk-license-.+'
-    - 'android-sdk-license'
-    - 'google-gdk-license-.+'
-
 android:
   components:
     - tools # to get the new `repository-11.xml`
@@ -45,6 +38,12 @@ android:
     # Specify at least one system image
     - sys-img-armeabi-v7a-google_apis-$ANDROID_API_LEVEL
     - sys-img-armeabi-v7a-google_apis-$EMULATOR_API_LEVEL
+  licenses:
+    - 'android-sdk-preview-license-.+'
+    - 'android-sdk-preview-license'
+    - 'android-sdk-license-.+'
+    - 'android-sdk-license'
+    - 'google-gdk-license-.+'
 
 before_script:
   # Create and start emulator
